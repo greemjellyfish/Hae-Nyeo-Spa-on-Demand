@@ -1,0 +1,17 @@
+{
+    "treatment": [
+    
+    {
+        "title": "waxing", 
+        "price": 25, 
+        "duration": "30 min", "description": "painful, but good for you", 
+        "image": "http://google.mp3.jpg" 
+    },
+    {
+        "title": "manicure", 
+        "price": 32, 
+        "duration": "60 min", "description": "get them claws", 
+        "image": "zoom.us/nails.png"
+    }
+]
+}
