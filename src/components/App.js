@@ -169,13 +169,13 @@ const App = () => {
   console.log(appointment, appointmentLoaded)
 
   useEffect(() => { //step 2 //hooks
-   
+   console.log("hello!!!!!!!")
     getTreatments()
       .then(treatments => dispatch({ //step 5. Call dispatch with an action object: { type: "ACTION_TYPE", payload: data }
         type: "SET_TREATMENTS",
         payload: treatments
         }))
-  }, [dispatch])
+  }, [])
 
   useEffect(() => {
        getAppointment()
@@ -186,23 +186,25 @@ const App = () => {
   }, [])//[appointment] but if i put appointment on the array, it ends in recursion. not sure why.
 
 
-  useEffect(() => {
-    if(appointment){//if use input new appointment then fetch. change the default appoint to empty, then 
-    }
-    addAppointment()
-      .then(appointment => {
-        dispatch({
-          type: "ADD_APPOINTMENT",
-          payload: appointment
-        })
-      })
-  },[])
+  // useEffect(() => {
+  //   if(appointment){//if use input new appointment then fetch. change the default appoint to empty, then 
+    
+  //   addAppointment()
+  //     .then(appointment => {
+  //       dispatch({
+  //         type: "ADD_APPOINTMENT",
+  //         payload: appointment
+  //       })
+  //     })
+  //   }
+  // },[appointment])
+  
 
 
     return (
       <div className = "App">
       <Switch>
-        <Route path="/treatments" component={TreatmentPage} />  
+        <Route exact path="/treatments" component={TreatmentPage} />  
         <Route exact path="/treatments/:id" component={Treatment} />
         <Route path="/appointment" component={AppointmentForm} />
         {/* <Route exact path="/" component={HomePage} /> */}
