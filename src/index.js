@@ -1,13 +1,29 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './components/App';
+import { BrowserRouter as Router } from 'react-router-dom'
+
 import * as serviceWorker from './serviceWorker';
 
+import { Provider } from 'react-redux' //provider connects react-redux 
+import store from './store' // === `./store/index.js`
+
+
+
+
+
+import './index.css';
+import 'semantic-ui-css/semantic.min.css'
+
+import App from './components/App';
+
+
 ReactDOM.render(
-  <React.StrictMode>
+//wrap App with Provider and use store as a prop
+<Router>
+  <Provider store = {store} >
     <App />
-  </React.StrictMode>,
+  </Provider>
+  </Router>,
   document.getElementById('root')
 );
 

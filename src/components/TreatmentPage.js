@@ -1,12 +1,12 @@
 import React from 'react'
-import TreatmentCollection from './TreatmentCollection'
+import TreatmentList from './TreatmentList'
 
 const TreatmentPage = () => {
 
         return (
             <div>
-                hello world from TreatmentPage 45
-                <TreatmentCollection />
+                
+                <TreatmentList />
 
             </div>
             )

@@ -1,0 +1,6 @@
+@import './variables';
+@import './body';
+
+.App{
+    @include flexCenter(lightblue);
+}
