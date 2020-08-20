@@ -41,7 +41,7 @@
 
 
 import React from 'react'
-// import { render } from 'react-dom'
+import { render } from 'react-dom'
 //import LocationForm from './LocationForm.js'
 //import PaymentForm from './PaymentForm.js'
 //import TimeForm from './TimeForm.js'
@@ -108,6 +108,7 @@ fetch("http://localhost:3000/api/v1/users/1/appointments",{
         <br></br><br></br>
         <h3>Add an Appointment!</h3>
         <Form onSubmit={this.handleSubmit}>
+        {/* <Form onSubmit={() => console.log("hi hi")} > */}
           <Form.Group widths="equal">
 
             <Form.Input fluid 
@@ -147,8 +148,14 @@ fetch("http://localhost:3000/api/v1/users/1/appointments",{
             /> */}
 
           </Form.Group>
-          <Link to ={`/bookingconfirm`}><Form.Button>Submit</Form.Button></Link>
+         {/* <Link to ={`/bookingconfirm`}></Link> */}
+         
+         <Form.Button>Submit</Form.Button>
+
+ <Link to ={`/bookingconfirm`}> confirmation </Link>
+
         </Form>
+               
       </div>
     )
   }
