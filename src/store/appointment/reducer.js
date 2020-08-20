@@ -1,39 +1,41 @@
-const defaultState = {
-   appointment: [
-       {address:"default address",
-       time: "default time",
-       payment: "default payment",
-       user_id:8,
-       treatment_id:8,
-       appointmentLoaded:false }
-   ]
-}
-//console.log("app default", defaultState)
+////NOT USING REDUX for APPOINTMENT
 
-function appointmentReducer (state = defaultState, action){
+// const defaultState = {
+//    appointment: [
+//        {address:"default address",
+//        time: "default time",
+//        payment: "default payment",
+//        user_id:8,
+//        treatment_id:8,
+//        appointmentLoaded:false }
+//    ]
+// }
+// //console.log("app default", defaultState)
 
-    console.log("appointment reducer", action)
+// function appointmentReducer (state = defaultState, action){
 
-    switch(action.type){
-        // case "FETCH_APPOINTMENT":
-        // return {
-        // ...state,
-        // appointmentLoaded: true
-        //  }
-        case "SET_APPOINTMENT": //setposition in ian's
-        return {
-        ...state,
-        appointment: action.payload,
-        appointmentLoaded: true
-        }
-        case "ADD_APPOINTMENT":
-        return {
-            ...state,
-            appointment: [...state.appointment, action.payload]
-        }
-    default: 
-         return state
-    }
-}
+//     console.log("appointment reducer", action)
 
-export default appointmentReducer
+//     switch(action.type){
+//         // case "FETCH_APPOINTMENT":
+//         // return {
+//         // ...state,
+//         // appointmentLoaded: true
+//         //  }
+//         case "SET_APPOINTMENT": //setposition in ian's
+//         return {
+//         ...state,
+//         appointment: action.payload,
+//         appointmentLoaded: true
+//         }
+//         case "ADD_APPOINTMENT":
+//         return {
+//             ...state,
+//             appointment: [...state.appointment, action.payload]
+//         }
+//     default: 
+//          return state
+//     }
+// }
+
+// export default appointmentReducer

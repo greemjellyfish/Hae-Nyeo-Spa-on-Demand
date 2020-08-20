@@ -5,9 +5,7 @@ const TreatmentPage = () => {
 
         return (
             <div>
-                
                 <TreatmentList />
-
             </div>
             )
 }

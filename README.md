@@ -48,16 +48,17 @@ REACT FORM fetch POST from
 follow the step by step
 
 # ROUTING
-In Ian's lecture, he adjusted two files for React Router:
+JACK: "In Ian's lecture, he adjusted two files for React Router:
 In Index.js, he wrapped the entire application (<App />) in a router, from react-router-dom, which you'll have to install. Code is here: https://github.com/learn-co-students/nyc04-seng-ft-041920/blob/master/43-react-router/spawtify/src/index.js
-In App.js, he had a Switch component wrap around all of the other components he was running, and then for each route (/favorites, /albums, /albums/:id), he had a new Route component, which would check for the exact path="/albums/:id , and then render the appropriate Component https://github.com/learn-co-students/nyc04-seng-ft-041920/blob/master/43-react-router/spawtify/src/components/App.js
+In App.js, he had a Switch component wrap around all of the other components he was running, and then for each route (/favorites, /albums, /albums/:id), he had a new Route component, which would check for the exact path="/albums/:id , and then render the appropriate Component https://github.com/learn-co-students/nyc04-seng-ft-041920/blob/master/43-react-router/spawtify/src/components/App.js "
 
+but I found it really difficult to follow ian's routing lecture because he used state data but I fetched data using redux, useSelector. So I suffered a bit. I struggled trying to learn redux-routing but Jack told me I can simply use reactrouting so I used this link https://reactrouter.com/web/guides/quick-start
 
+Treatment component was fascinating
 
+1. Treatment component had to get the data directly from the useSelector-state, not from the parent useSelector. Then used `React.useState` to update the default state, we declared as `eachTreatment` ....
 
-
-
-
+2. Therefore, `treatments` treatmentPage(parent of treatment) got error because the datas were coming from different states. so created new TreatmentCard to send the iteration to each treatment.
 
 
 # react router 

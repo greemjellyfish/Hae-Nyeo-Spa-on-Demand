@@ -148,11 +148,18 @@ import React, { useEffect } from 'react'; //useEffect hooks //********* updating
 import { useSelector, useDispatch } from 'react-redux' //********* reading hooks step 1
 //useDispatch ********* updating hooks step 3
 
-import { Route, Switch } from 'react-router-dom'
+import { BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
+//routing yes
 
-import AppointmentForm from './AppointmentForm.js'
-import TreatmentPage from './TreatmentPage'
-import Treatment from './Treatment'
+import AppointmentForm from './appointment/AppointmentForm.js'
+import BookingConfirmPage from './appointment/BookingConfirmPage'
+import AppointmentPage from './appointment/AppointmentPage'
+import AppointmentUD from './appointment/AppointmentUD'
+
+import TreatmentPage from './treatment/TreatmentPage'
+import Treatment from './treatment/Treatment'
+import HomePage from './HomePage'
+
 
 import '../styles/style.scss'
 
@@ -202,14 +209,32 @@ const App = () => {
 
 
     return (
+    <Router>
       <div className = "App">
+        {/* <nav>
+          <ul>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/treatments">treatments</Link>
+            </li>
+            <li>
+              <Link to="/appointment">appointment</Link>
+            </li>
+          </ul>
+        </nav> */}
       <Switch>
         <Route exact path="/treatments" component={TreatmentPage} />  
         <Route exact path="/treatments/:id" component={Treatment} />
-        <Route path="/appointment" component={AppointmentForm} />
-        {/* <Route exact path="/" component={HomePage} /> */}
+        <Route exact path="/appointment" component={AppointmentForm} />
+        <Route exact path="/appointments" component={AppointmentPage} />
+        <Route exact path="/appointmentUD" component={AppointmentUD} />
+        <Route exact path="/bookingConfirm" component={BookingConfirmPage}/>
+        <Route exact path="/" component={HomePage} />
       </Switch>
-      </div>
+    </div>
+    </Router>
     )
 }
 

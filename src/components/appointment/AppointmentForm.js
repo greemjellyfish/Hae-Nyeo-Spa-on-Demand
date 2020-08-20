@@ -42,20 +42,18 @@
 
 import React from 'react'
 // import { render } from 'react-dom'
-import LocationForm from './LocationForm.js'
-import PaymentForm from './PaymentForm.js'
-import TimeForm from './TimeForm.js'
+//import LocationForm from './LocationForm.js'
+//import PaymentForm from './PaymentForm.js'
+//import TimeForm from './TimeForm.js'
 import { Form } from 'semantic-ui-react'
+import { BrowserRouter as Router, Switch, Route, Link} from "react-router-dom"
 
 class AppointmentForm extends React.Component {
-
- 
-
   //Form step 1
   state = {
-       address:"default address",
-       time: "default time",
-       payment: "default payment",
+       address:"",
+       time: "",
+       payment: "",
        user_id:1,
        treatment_id:1 
   } //Form step 5-4
@@ -78,24 +76,10 @@ class AppointmentForm extends React.Component {
       "address": this.state.address,
       "time": this.state.time,
       "payment": this.state.payment,
-      "user_id": this.state.user_id,
-      "treatment_id": this.state.treatment_id 
+      "user_id": 1,
+      "treatment_id": 1 
     }
     console.log("BODYDATA", bodyData)
-  
-
-//   fetch("http://localhost:3000/api/v1/users/1/appointments", {
-//     method: "POST",
-//     headers: {
-//       "Content-Type": "application/json"
-//     },
-//     body: JSON.stringify(bodyData)
-//   })
-//     .then(r => r.json())
-//     .then(newAppointment => {
-//         console.log(newAppointment)
-//     })
-// }
 
 //componentDidMount(){ //only runs when component mounted, when it's displayed on the screen. so don't use it now. 
 fetch("http://localhost:3000/api/v1/users/1/appointments",{
@@ -141,14 +125,14 @@ fetch("http://localhost:3000/api/v1/users/1/appointments",{
             onChange={this.handleInputChange}
             />
 
-            <Form.Input fluid label="payment" 
+            {/* <Form.Input fluid label="payment" 
             placeholder="payment" 
             name="payment" 
             value={this.state.payment} 
             onChange={this.handleInputChange}
-            />
+            /> */}
 
-            <Form.Input fluid label="user_id" 
+            {/* <Form.Input fluid label="user_id" 
             placeholder="user_id" 
             name="user_id" 
             value={this.state.user_id} 
@@ -160,10 +144,10 @@ fetch("http://localhost:3000/api/v1/users/1/appointments",{
             name="treatment_id" 
             value={this.state.treatment_id} 
             onChange={this.handleInputChange}
-            />
+            /> */}
 
           </Form.Group>
-          <Form.Button>Submit</Form.Button>
+          <Link to ={`/bookingconfirm`}><Form.Button>Submit</Form.Button></Link>
         </Form>
       </div>
     )

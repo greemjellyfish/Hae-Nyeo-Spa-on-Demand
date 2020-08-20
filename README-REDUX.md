@@ -254,7 +254,6 @@ useEffect(() => {
         }))
   }, [])
 
-
   useEffect(() => {
     addAppointment()
       .then(appointment => {
