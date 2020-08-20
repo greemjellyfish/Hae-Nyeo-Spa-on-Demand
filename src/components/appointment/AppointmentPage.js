@@ -23,16 +23,47 @@ componentDidMount = () => {
 
 
 
+
+//*****************************************
+//*************** DELETE *************** /
+//*****************************************
+removeAppointment = id => {
+    console.log(id)
+    const updatedAppointments = this.state.appointments.filter(appointment => {
+      //if (parseInt(appointment.id) !== parseInt(id)) {
+      if (appointment.id !== id) {
+        return true
+      } else {
+        return false
+      }
+    })
+    this.setState({
+      appointments: updatedAppointments
+    })
+  }
+
+deleteAppointment = (appointment) => {
+    console.log("Clicked")
+    fetch(`http://localhost:3000/api/v1/users/1/appointments/${appointment.id}`, {
+      method: "DELETE",
+    })
+   //console.log(appointment.id)
+
+    this.removeAppointment(appointment.id)  
+}
+
+
 render(){
     const appointments = this.state.appointments
     console.log(appointments)
 return(
     <div>
     {appointments.map((appointment, index) => 
-    <AppointmentCard key = {index} appointment={appointment} />
+    <AppointmentCard key = {index} appointment={appointment} deleteAppointment={this.deleteAppointment} />
     )}
     <br></br>
-    <Link to={`/`}> home </Link>
+    <Link to={`/`}> home </Link>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
     </div>
 )
 }

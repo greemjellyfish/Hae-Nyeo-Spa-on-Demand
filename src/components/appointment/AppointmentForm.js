@@ -46,7 +46,7 @@ import { render } from 'react-dom'
 //import PaymentForm from './PaymentForm.js'
 //import TimeForm from './TimeForm.js'
 import { Form } from 'semantic-ui-react'
-import { BrowserRouter as Router, Switch, Route, Link} from "react-router-dom"
+import { BrowserRouter as Router, Switch, Route, Link, withRouter } from "react-router-dom"
 
 class AppointmentForm extends React.Component {
   //Form step 1
@@ -71,6 +71,7 @@ class AppointmentForm extends React.Component {
 // ////Form step 5 POST FETCH
   handleSubmit = () => {
    console.log("submitting form...") 
+   
     //form step 5-3
     const bodyData = {
       "address": this.state.address,
@@ -79,7 +80,9 @@ class AppointmentForm extends React.Component {
       "user_id": 1,
       "treatment_id": 1 
     }
+
     console.log("BODYDATA", bodyData)
+    this.props.history.push("/bookingconfirm")
 
 //componentDidMount(){ //only runs when component mounted, when it's displayed on the screen. so don't use it now. 
 fetch("http://localhost:3000/api/v1/users/1/appointments",{
@@ -118,8 +121,8 @@ fetch("http://localhost:3000/api/v1/users/1/appointments",{
             value={this.state.address} 
             onChange={this.handleInputChange}
             />
-
-            <Form.Input fluid label="time" 
+<br></br>
+            <Form.Input fluid label="date/time" 
             placeholder="time" 
             name="time" 
             value={this.state.time} 
@@ -152,7 +155,7 @@ fetch("http://localhost:3000/api/v1/users/1/appointments",{
          
          <Form.Button>Submit</Form.Button>
 
- <Link to ={`/bookingconfirm`}> confirmation </Link>
+ {/* <Link to ={`/bookingconfirm`}> confirmation </Link> */}
 
         </Form>
                
@@ -161,4 +164,4 @@ fetch("http://localhost:3000/api/v1/users/1/appointments",{
   }
 }
 
-export default AppointmentForm
+export default withRouter(AppointmentForm)

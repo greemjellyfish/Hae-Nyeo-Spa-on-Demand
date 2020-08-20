@@ -25,7 +25,7 @@ const Treatment = (props) => {
     return (
         <div className = "treatment">
             <div className = "images">  
-            <img src={eachTreatment.image} alt={eachTreatment.name} width={200} height={120} mode='fit' />
+            <img src={eachTreatment.image} alt={eachTreatment.name} width={800} height={480} mode='fit' />
             </div>
            {eachTreatment.title}<br></br>
             ${eachTreatment.price}.00<br></br>

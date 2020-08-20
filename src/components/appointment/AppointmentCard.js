@@ -1,15 +1,13 @@
 import React from 'react'
 import { Card, Button, Icon } from 'semantic-ui-react'
-import { BrowserRouter as Router, Switch, Route, Link} from "react-router-dom"
+import { BrowserRouter as Router, Switch, Route, Link,withRouter } from "react-router-dom"
 
-const AppointmentCard = ({appointment}) => {
 
-  const deleteAppointment = () => {
-      console.log("Clicked")
-    fetch(`http://localhost:3000/api/v1/users/1/appointments/${appointment.id}`, {
-      method: "DELETE",
-    })
-  }
+const AppointmentCard = ({appointment, deleteAppointment}) => {
+
+const callbackFunc = () => {
+  deleteAppointment(appointment)
+}
 
 return(
 <div>
@@ -27,7 +25,9 @@ return(
             //onClick={updateAppointment}
             class="edit outline icon"></i> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             
-           <Link to ={'/appointments'}> <i onClick={deleteAppointment}class="trash alternate outline icon"></i></Link>
+           <Link to ={'/appointments'}> <i onClick={callbackFunc}class="trash alternate outline icon"></i></Link>
+
+          
         </div>
         </div>
     </div>
@@ -36,4 +36,4 @@ return(
 )
 
 }
-export default AppointmentCard
+export default withRouter(AppointmentCard)
