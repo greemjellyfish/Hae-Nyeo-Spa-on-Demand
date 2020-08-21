@@ -3,6 +3,7 @@ import { useSelector } from 'react-redux'  //hooks
 import TreatmentCard from './TreatmentCard'
 import { getTreatments } from '../../store/treatment/selectors'
 
+
 //class TreatmentList extends React.Component {
 const TreatmentList = () => {
     const treatments = useSelector(getTreatments)
@@ -10,10 +11,14 @@ const TreatmentList = () => {
 
         return (
             <div>
+
+
                 {treatments.map((treatment, index) =>  
                 <TreatmentCard key ={index} treatment={treatment} />
                 )}
-                </div>
+
+            </div>
+            
             )
 }
 

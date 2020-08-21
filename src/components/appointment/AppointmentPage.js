@@ -58,11 +58,22 @@ render(){
     console.log(appointments)
 return(
     <div>
-    {appointments.map((appointment, index) => 
-    <AppointmentCard key = {index} appointment={appointment} deleteAppointment={this.deleteAppointment} />
-    )}
-    <br></br>
-    <Link to={`/`}> home </Link>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+          <div class="container">
+          <div class="centered">
+          
+    
+
+            {appointments.map((appointment, index) => 
+            <AppointmentCard key = {index} appointment={appointment} deleteAppointment={this.deleteAppointment} />
+            )}
+            <br></br>
+            <Link to={`/`}> home </Link>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+       
+          </div>
+          </div>
 
     </div>
 )
