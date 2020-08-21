@@ -73,19 +73,32 @@ const TreatmentCard = ({ treatment }) => {
               </div>
       </div>
 
+
+         <div class="container">
+          <div class="centered">
+            <h1>
                <Link to={`/treatments/1`}> <img src={process.env.PUBLIC_URL + '/manipedi.png'}  width={400} height={400} mode='fit'  />  </Link>       
-
+              <Link to={`/treatments/1`}><h1>MANI PEDI </h1> </Link>
+              
                <Link to={`/treatments/2`}> <img src={process.env.PUBLIC_URL + '/mani.png'} width={400} height={400} mode='fit' />  </Link>
+              <Link to={`/treatments/2`}><h1>MANICURE </h1> </Link>
 
-               <Link to={`/treatments/3`}> <img src={process.env.PUBLIC_URL + '/pedi.png'}  width={400} height={400} mode='fit'  />  </Link>     
-
+               <Link to={`/treatments/3`}> <img src={process.env.PUBLIC_URL + '/pedi.png'}  width={400} height={400} mode='fit'  />  </Link>  
+              <Link to={`/treatments/3`}><h1>PEDICURE </h1> </Link>               
+            
                <Link to={`/treatments/4`}> <img src={process.env.PUBLIC_URL + '/massage.png'}  width={400} height={400} mode='fit'  />  </Link>
+              <Link to={`/treatments/4`}><h1>MASSAGES</h1> </Link>
+{/* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; */}
 
                <Link to={`/treatments/5`}> <img src={process.env.PUBLIC_URL + '/wax.png'}  width={400} height={400} mode='fit'  />  </Link>
+              <Link to={`/treatments/5`}><h1>WAXING </h1> </Link>
+              {/* <br></br><br></br> */}
 
                <Link to={`/treatments/6`}> <img src={process.env.PUBLIC_URL + '/threading.png'}  width={400} height={400} mode='fit'  />  </Link>
-
-
+              <Link to={`/treatments/6`}><h1>THREADING</h1> </Link>
+               </h1>
+          </div>
+          </div>
 
         {/* <div className = "treatment">
             <div className = "images">  
