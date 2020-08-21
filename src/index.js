@@ -10,7 +10,7 @@ import store from './store' // === `./store/index.js`
 
 
 
-
+import 'bootstrap/dist/css/bootstrap.css'
 import './index.css';
 import 'semantic-ui-css/semantic.min.css'
 

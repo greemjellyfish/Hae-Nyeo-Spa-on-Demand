@@ -1,29 +1,30 @@
-@mixin flexCenter($background) {
-    height: 1000px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: $background;
-}
+// @mixin flexCenter($background) {
+//     height: 1000px;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     background: $background;
+// }
 
-body {
+// body {
     
-    @include flexCenter(pink);
+//     @include flexCenter(pink);
 
-    background: pink;
-    height: 100%;
-    margin: 10%;
-    border: 1px solid orange;    
-    padding: 10px 30px 10px;
+//     background: pink;
+//     height: 100%;
+//     margin: 10%;
+//     border: 1px solid orange;    
+//     padding: 10px 30px 10px;
 
-    font-size: 15px;
+//     font-size: 15px;
+//     font-family: arial;
 
-    color: $textColor;
+//     color: $textColor;
     
-    button{
-        background: $primaryBtn;
-        &:hover{
-            background: white;
-        }
-    }
-}
+//     button{
+//         background: $primaryBtn;
+//         &:hover{
+//             background: white;
+//         }
+//     }
+// }

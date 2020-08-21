@@ -64,3 +64,42 @@ Treatment component was fascinating
 # react router 
 https://blog.logrocket.com/react-router-v6/
 
+# bootstrap 
+
+# pug lol for css, which I didn't use
+
+# blob menu
+MORPHING BLOB by Monica Dinculescu
+https://codepen.io/notwaldorf/pen/omXwzw?editors=0100
+
+# blob menu
+BLOBS, GRIDS AND VWS
+Juan Pablo
+https://codepen.io/jupago/pen/EMjzNK
+
+# file-loader library
+for svg.... actually got rid of it all 
+
+
+<!-- 
+(node_modules/react-scripts/config/webpack.config.js)
+module.exports = {
+  entry: './src/index.js',
+  module: {
+    rules: [
+      //...
+      {
+        test: /\.(png|jp(e*)g|svg|gif)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: 'images/[hash]-[name].[ext]',
+            },
+          },
+        ],
+      },
+    ],
+  },
+  //...
+}; -->
