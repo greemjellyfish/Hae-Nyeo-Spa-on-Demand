@@ -2,11 +2,15 @@
 Hae Nyeo Spa at home/on-demand is a full-stack web application where users can make an appointment to get spa service and have the technician come to your door.
 
 # Getting started
-1. Install the Rails backend
-2. 
-3. 
+1. Clone the backend repo
+2. Install Node.js and npm
+  `$ brew install node`
+3. Clone this repository and change the directory
 4. Install all dependencies
-5. 
+  `$ npm install`
+5. Run the app
+  `$ npm start`
+6. backend and frontend are running at the same time
 
 # Features
 ### Asynchronous fetches
