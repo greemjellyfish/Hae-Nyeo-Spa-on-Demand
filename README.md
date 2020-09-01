@@ -1,8 +1,8 @@
-# Hae Nyeo Spa at Home
-Hae Nyeo Spa at home/on-demand is a full-stack web application where users can make an appointment to get spa service and have the technician come to your door.
+# Hae Nyeo Spa on-demand/at Home
+Hae Nyeo Spa (at home/on-demand) is a full-stack web application where users can make an appointment to get spa services at any location they would like. It's like airbnb or uber for nail salon. The technician or therapist will come to you.
 
 # Getting started
-1. Clone the backend repo
+1. Clone the [backend repo](https://github.com/labradorescence/Hae-Nyeo-Spa-on-Demand-backend)
 2. Install Node.js and npm
   `$ brew install node`
 3. Clone this repository and change the directory
@@ -27,12 +27,13 @@ Hae Nyeo Spa at home/on-demand is a full-stack web application where users can m
 * Models have `has_many`, `belongs_to` and `has_many through` associations
 
 ### Redux
-* 
+* a global state management system
 * 
 
 ### React
 * Update the application state using React Lifecycle methods.
 * Organize the 
+* React Router
 
 # Tech Stack
 * Redux
@@ -46,6 +47,5 @@ Hae Nyeo Spa at home/on-demand is a full-stack web application where users can m
 * Rack CORS:
 * ActiveModel Serializer
 * Semantc UI
-* 
-
-
+* Morphing Blog by Monica Dinculescu
+* blogs, grids and vws by Juan Pablo
