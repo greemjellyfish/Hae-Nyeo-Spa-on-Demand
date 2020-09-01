@@ -30,9 +30,10 @@ Hae Nyeo Spa (at home/on-demand) is a full-stack web application where users can
 
 ### React
 * Update the application state using React Lifecycle methods.
-* Organize the 
-* React Router allows 
-* Asynchronous fetches: pulls in treatment data from the Rails backend API
+* Organize 12 React components and organized the code structure by feature specific folders.
+* React Routers allow user to navigate the web application efficiently. 
+* Asynchronous fetches pull in treatment data from the Rails backend API.
+* SVG in JSX for the image format vector graphics attributes.
 
 ### ActiveRecord Associations
 * 3 models have `has_many`, `belongs_to` and `has_many through` associations.
@@ -50,5 +51,4 @@ Hae Nyeo Spa (at home/on-demand) is a full-stack web application where users can
 * [Rack CORS](https://github.com/cyu/rack-cors)
 * [ActiveModel::Serializer](https://github.com/rails-api/active_model_serializers)
 * Semantc UI
-* Morphing Blog by Monica Dinculescu
-* blogs, grids and vws by Juan Pablo
+* SVG CSS: Morphing Blog by Monica Dinculescu and blogs, grids and vws by Juan Pablo
