@@ -1,5 +1,5 @@
 # Hae Nyeo Spa on-demand/at Home
-Hae Nyeo Spa (at home/on-demand) is a full-stack web application where users can make an appointment to get spa services at any location they would like. It's like airbnb or uber for nail salon. The technician or therapist will come to you.
+Hae Nyeo Spa (at home/on-demand) is a full-stack web application where users can make appointments to get spa services at any location. It's like airbnb or uber for nail salon. The technician or therapist will come to the client's location for the service.
 
 # Getting started
 1. Clone the [BACKEND REPO](https://github.com/labradorescence/Hae-Nyeo-Spa-on-Demand-backend)
