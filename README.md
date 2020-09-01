@@ -6,12 +6,13 @@ We bring a nail therapist to you. It’s an airbnb for nail treatment on demand 
 Asynchronous fetches
 pulls in treatment data from the Rails backend API
 
-**CRUD Operations
+### CRUD Operations
 * C: Clients can make an appointment
 * R: Clients can read treatments
 * U: Clients can reschedule the appointment
 * D: Clients can cancel the appointment
 
-**ActiveRecord Associations
-*There are 3 models that have `has_many`, `belongs_to` and `has_many through` associations
+### ActiveRecord Associations
+* There are 3 models that have `has_many`, `belongs_to` and `has_many through` associations
 
+### Other Features
