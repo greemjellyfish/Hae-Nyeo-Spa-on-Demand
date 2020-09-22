@@ -68,6 +68,9 @@ https://blog.logrocket.com/react-router-v6/
 
 # pug lol for css, which I didn't use
 
+# css 
+https://freefrontend.com/css-blob-effects/
+
 # blob menu
 MORPHING BLOB by Monica Dinculescu
 https://codepen.io/notwaldorf/pen/omXwzw?editors=0100
