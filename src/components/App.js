@@ -148,7 +148,7 @@ import React, { useEffect } from 'react'; //useEffect hooks //********* updating
 import { useSelector, useDispatch } from 'react-redux' //********* reading hooks step 1
 //useDispatch ********* updating hooks step 3
 
-import { BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
 //routing yes
 
 import AppointmentForm from './appointment/AppointmentForm.js'
@@ -163,12 +163,10 @@ import HomePage from './HomePage'
 
 import '../styles/style.scss'
 
-import { getTreatments, getAppointment, addAppointment } from '../api'
+import { getTreatments, getAppointment } from '../api'
 
 
 const App = () => {
-
-  const treatment = useSelector(state => state.treatment)
 
   const dispatch = useDispatch() //step 4 Call useDispatch to get access to the dispatch function
   const appointment = useSelector(state => state.appointment)
@@ -182,7 +180,7 @@ const App = () => {
         type: "SET_TREATMENTS",
         payload: treatments
         }))
-  }, [])
+  })
 
   useEffect(() => {
        getAppointment()
@@ -190,7 +188,7 @@ const App = () => {
         type: "SET_APPOINTMENT", //setposition(ian's)
         payload: appointment
         }))
-  }, [])//[appointment] but if i put appointment on the array, it ends in recursion. not sure why.
+  })//[appointment] but if i put appointment on the array, it ends in recursion. not sure why.
 
 
   // useEffect(() => {
