@@ -1,9 +1,10 @@
 import React from 'react'
-import { useSelector } from 'react-redux'  //hooks
+//import { useSelector } from 'react-redux'  //hooks
 import AppointmentCard from './AppointmentCard'
 
-import { BrowserRouter as Router, Switch, Route, Link} from "react-router-dom"
-import { getAppointment, addAppointment } from '../../api'
+import { BrowserRouter as Link} from "react-router-dom"
+//import { BrowserRouter as Router, Switch, Route, Link} from "react-router-dom"
+//import { getAppointment, addAppointment } from '../../api'
 
 
 class AppointmentPage extends React.Component {

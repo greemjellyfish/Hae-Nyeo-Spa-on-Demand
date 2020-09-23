@@ -154,8 +154,6 @@ import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import AppointmentForm from './appointment/AppointmentForm.js'
 import BookingConfirmPage from './appointment/BookingConfirmPage'
 import AppointmentPage from './appointment/AppointmentPage'
-import AppointmentUD from './appointment/AppointmentUD'
-
 import TreatmentPage from './treatment/TreatmentPage'
 import Treatment from './treatment/Treatment'
 import HomePage from './HomePage'
@@ -227,7 +225,6 @@ const App = () => {
         <Route exact path="/treatments/:id" component={Treatment} />
         <Route exact path="/appointment" component={AppointmentForm} />
         <Route exact path="/appointments" component={AppointmentPage} />
-        <Route exact path="/appointmentUD" component={AppointmentUD} />
         <Route exact path="/bookingConfirm" component={BookingConfirmPage}/>
         <Route exact path="/" component={HomePage} />
       </Switch>
