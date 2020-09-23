@@ -138,10 +138,6 @@ const Treatment = (props) => {
              <Link to={`/appointment`}>book an appointment</Link>
             <br></br> <br></br> <br></br>
         </div> */}
-
-
-
-
 </div>
     )
 }
