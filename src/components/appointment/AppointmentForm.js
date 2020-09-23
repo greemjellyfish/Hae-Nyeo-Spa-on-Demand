@@ -41,12 +41,12 @@
 
 
 import React from 'react'
-import { render } from 'react-dom'
+//import { render } from 'react-dom'
 //import LocationForm from './LocationForm.js'
 //import PaymentForm from './PaymentForm.js'
 //import TimeForm from './TimeForm.js'
 import { Form } from 'semantic-ui-react'
-import { BrowserRouter as Router, Switch, Route, Link, withRouter } from "react-router-dom"
+import { BrowserRouter as Link, withRouter } from "react-router-dom"
 
 class AppointmentForm extends React.Component {
   //Form step 1
@@ -318,7 +318,7 @@ fetch("http://localhost:3000/api/v1/users/1/appointments",{
               <div class="field">
                 <div class="ui checkbox">
                   <input type="checkbox" name="hot-deals"/>
-                  <label>I agree to the <a href="#">Terms of Service</a>.</label>
+               
                 </div>
               </div>
               <div class="ui error message">
