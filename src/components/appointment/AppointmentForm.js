@@ -41,12 +41,12 @@
 
 
 import React from 'react'
-//import { render } from 'react-dom'
+import { render } from 'react-dom'
 //import LocationForm from './LocationForm.js'
 //import PaymentForm from './PaymentForm.js'
 //import TimeForm from './TimeForm.js'
 import { Form } from 'semantic-ui-react'
-import { BrowserRouter as Link, withRouter } from "react-router-dom"
+import { BrowserRouter as Router, Switch, Route, Link, withRouter } from "react-router-dom"
 
 class AppointmentForm extends React.Component {
   //Form step 1
