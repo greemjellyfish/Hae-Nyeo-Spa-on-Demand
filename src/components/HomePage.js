@@ -19,10 +19,10 @@ const HomePage = () => {
    <h1><Link to="/treatments">TREATMENT</Link></h1>
   </div>
   
-  <div class="blob">      
+  {/* <div class="blob">      
 <svg class="blob2" xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600"><path d="M416 239.2C456.5 303 499.5 371.5 480.6 428.2 461.7 485 380.8 530 297.8 531.3 214.8 532.5 129.7 490 93.7 423.4 57.8 356.8 71.1 266.2 113.7 201.1 156.2 136 228.1 96.5 283 106.3 337.8 116.2 375.6 175.3 416 239.2Z" fill="#FE840E"/></svg>
     <h1><Link to="/appointment">APPOINTMENT</Link></h1>
-  </div>
+  </div> */}
   
   <div class="blob">
    <svg class="blob3" xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600"><path d="M477.2 201.2C504.4 244.7 483.6 319.3 446.1 379 408.5 438.7 354.3 483.3 293.8 486.9 233.3 490.5 166.6 453 139.9 399.6 113.2 346.2 126.5 276.8 159.8 229.8 193.2 182.7 246.6 157.8 310.8 151.6 375.1 145.3 450.1 157.7 477.2 201.2Z" fill="#FE840E"/></svg>
