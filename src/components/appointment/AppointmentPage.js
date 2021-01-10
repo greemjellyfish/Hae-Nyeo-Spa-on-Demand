@@ -11,18 +11,11 @@ class AppointmentPage extends React.Component {
     appointments: []
     }
 
-    componentDidMount =() => {
-        fetch(`http://haenyeospa.herokuapp.com/api/v1/users/1/appointments`)
-        .then(data => console.log(data))
-    }
-
     componentDidMount = () => {
         fetch(`http://haenyeospa.herokuapp.com/api/v1/users/1/appointments`)
                 .then(r => r.json())
                 .then(appointments => {
-                  console.log(appointments)
-                  // this.setState({appointments})           
-
+                  this.setState({appointments})           
                 }
 
                 )
