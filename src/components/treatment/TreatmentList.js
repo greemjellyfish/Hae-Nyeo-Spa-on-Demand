@@ -11,14 +11,8 @@ const TreatmentList = () => {
 
         return (
             <div>
-
-
-                {treatments.map((treatment, index) =>  
-                <TreatmentCard key ={index} treatment={treatment} />
-                )}
-
-            </div>
-            
+                <TreatmentCard></TreatmentCard>
+            </div>    
             )
 }
 
