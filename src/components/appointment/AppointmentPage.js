@@ -12,7 +12,7 @@ appointments: []
 }
 
 componentDidMount = () => {
-    fetch(`http://localhost:3000/api/v1/users/1/appointments`)
+    fetch(`http://haenyeospa.herokuapp.com/api/v1/users/1/appointments`)
             .then(r => r.json())
              .then(appointments => {
                 this.setState({appointments})           
@@ -43,7 +43,7 @@ removeAppointment = id => {
 
 deleteAppointment = (appointment) => {
     console.log("Clicked")
-    fetch(`http://localhost:3000/api/v1/users/1/appointments/${appointment.id}`, {
+    fetch(`http://haenyeospa.herokuapp.com/api/v1/users/1/appointments/${appointment.id}`, {
       method: "DELETE",
     })
    //console.log(appointment.id)
