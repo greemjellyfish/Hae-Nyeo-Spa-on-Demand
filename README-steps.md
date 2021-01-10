@@ -106,3 +106,24 @@ module.exports = {
   },
   //...
 }; -->
+
+
+# jest test
+https://www.youtube.com/watch?v=3e1GHCA3GP0
+
+`npm install @testing-library/react react-test-render jest-dom --save-dev`
+
+save it as a dev dependancy(--save-dev) because dev is not part of the functionality(project) so it goes in as a dependancy
+
+
+
+# svg 
+
+-created `svgBlobs` folder and files.
+
+
+`npx @svgr/cli src/svgBlobs --out-dir src/svgBlobs --icon --javascript` - didn't work
+
+`npm install @svgr/cli --save-dev` - this supposed to turn svg file into react but I already have svg in react so this is not needed.
+
+but now it looks unordered/vertical 
