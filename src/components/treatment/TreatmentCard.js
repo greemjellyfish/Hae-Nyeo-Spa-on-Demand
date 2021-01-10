@@ -22,12 +22,11 @@ const TreatmentCard = ({ treatment }) => {
             
             <div class="blob">      
             <SvgBlobs2></SvgBlobs2>
-              <h1><Link to="/appointment">APPOINTMENT</Link></h1>
+            <h1><Link to="/appointment">APPOINTMENT</Link></h1>
             </div>
             
             <div class="blob">
             <SvgBlobs3></SvgBlobs3>
-          
             </div>
             
 
@@ -59,17 +58,6 @@ const TreatmentCard = ({ treatment }) => {
               
               <div class="blob">
               <SvgBlobs5></SvgBlobs5>
-                <div>         
-                  
-                  {/* <div className = "treatment">  
-                    <div className = "images">  
-                        <Link to={`/treatments/${treatment.id}`}>  
-                        <img src={treatment.image} alt={treatment.name} width={200} height={120} mode='fit' /> </Link>
-                        </div>
-                        <Link to={`/treatments/${treatment.id}`}> {treatment.title} </Link>
-                    </div>  */}
-                    
-                  </div>
               </div>
       </div>
 
@@ -88,30 +76,16 @@ const TreatmentCard = ({ treatment }) => {
             
                <Link to={`/treatments/4`}> <img src={process.env.PUBLIC_URL + '/massage.png'}  width={400} height={400} mode='fit' alt="massage"  />  </Link>
               <Link to={`/treatments/4`}><h1>MASSAGES</h1> </Link>
-{/* &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; */}
 
                <Link to={`/treatments/5`}> <img src={process.env.PUBLIC_URL + '/wax.png'}  width={400} height={400} mode='fit' alt="wax"  />  </Link>
               <Link to={`/treatments/5`}><h1>WAXING </h1> </Link>
-              {/* <br></br><br></br> */}
 
                <Link to={`/treatments/6`}> <img src={process.env.PUBLIC_URL + '/threading.png'}  width={400} height={400} mode='fit' alt="threading" />  </Link>
               <Link to={`/treatments/6`}><h1>THREADING</h1> </Link>
                </h1>
           </div>
           </div>
-
-        {/* <div className = "treatment">
-            <div className = "images">  
-            <Link to={`/treatments/${treatment.id}`}>  
-            <img src={treatment.image} alt={treatment.name} width={200} height={120} mode='fit' /> </Link>
-            </div>
-            <Link to={`/treatments/${treatment.id}`}> {treatment.title} </Link>
-            <br></br>
-            <br></br>
-        </div> */}
-
         </div>
-
     )
 }
 

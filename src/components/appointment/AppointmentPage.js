@@ -17,7 +17,6 @@ class AppointmentPage extends React.Component {
                 .then(appointments => {
                   this.setState({appointments})           
                 }
-
                 )
     }
 
