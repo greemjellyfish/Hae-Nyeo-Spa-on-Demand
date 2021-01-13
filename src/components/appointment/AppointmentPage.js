@@ -12,7 +12,7 @@ class AppointmentPage extends React.Component {
     }
 
     componentDidMount = () => {
-        fetch(`http://haenyeospa.herokuapp.com/api/v1/users/1/appointments`)
+        fetch(`https://haenyeospa.herokuapp.com/api/v1/users/1/appointments`)
                 .then(r => r.json())
                 .then(appointments => {
                   this.setState({appointments})           
@@ -43,7 +43,7 @@ class AppointmentPage extends React.Component {
 
     deleteAppointment = (appointment) => {
         console.log("Clicked")
-        fetch(`http://haenyeospa.herokuapp.com/api/v1/users/1/appointments/${appointment.id}`, {
+        fetch(`https://haenyeospa.herokuapp.com/api/v1/users/1/appointments/${appointment.id}`, {
           method: "DELETE",
         })
       //console.log(appointment.id)

@@ -93,7 +93,7 @@ class AppointmentForm extends React.Component {
 //componentDidMount(){ //only runs when component mounted, when it's displayed on the screen. so don't use it now. 
 
 
-fetch("http://haenyeospa.herokuapp.com/api/v1/users/1/appointments",{
+fetch("https://haenyeospa.herokuapp.com/api/v1/users/1/appointments",{
     method: "POST",
     headers: {
       "Content-Type": "application/json"
