@@ -26,85 +26,77 @@ const Treatment = (props) => {
       }
     }, [treatments])
 
- 
-    return (
-      
-<div>
 
-    <div class="blob-wrapper">
+  return (
 
-      <div class="blob">
-      <SvgBlobs1></SvgBlobs1>
-      <h1><Link to="/treatments">TREATMENT</Link></h1>
-      </div>
-      
-      <div class="blob">      
-      <SvgBlobs2></SvgBlobs2>
+    <div>
+      <div class="blob-wrapper">
+        <div class="blob">
+        <SvgBlobs1></SvgBlobs1>
+        <h1><Link to="/treatments">TREATMENT</Link></h1>
+        </div>
+        
+        <div class="blob">      
+        <SvgBlobs2></SvgBlobs2>
         <h1><Link to="/appointment">APPOINTMENT</Link></h1>
-      </div>
-      
-      <div class="blob">
-      <SvgBlobs3></SvgBlobs3>
-    
-      </div>
-      
-
-      <div class="blob">
-      <SvgBlobs4></SvgBlobs4>
+        </div>
+        
+        <div class="blob">
+        <SvgBlobs3></SvgBlobs3>
+        </div>
+        
+        <div class="blob">
+        <SvgBlobs4></SvgBlobs4>
         <h1><Link to="/">H O M E</Link></h1>
+        </div>
       </div>
 
-    </div>
-
-    {/* big pink blob */}
-    <div class="blob2">
-    <SvgBlobs2></SvgBlobs2>
-    </div>
-
-    <div class="container">
-    <div class="centered">
-      <h1>
-      
-      
-      <div className = "treatment">
-                <div className = "images">  
-                
-                <img 
-                src={eachTreatment.image} 
-                alt={eachTreatment.name} 
-                // width={800} 
-                // height={480} 
-                mode='fit' 
-                />
-                </div>
-                {eachTreatment.title}<br></br>
-                ${eachTreatment.price}.00<br></br>
-                {eachTreatment.duration} mins<br></br>
-                {eachTreatment.description}<br></br>
-                <br></br>
-                {/* <Link to={`/appointment`}>book an appointment</Link> */}
-                <br></br> <br></br> <br></br>
-            </div>
-      
-      
-      </h1>
-    </div>
-    </div>
-
-
-      <div class="blob">
-      <SvgBlobs1></SvgBlobs1>
-      <h1><Link to={`/appointment`}>book an appointment</Link></h1>
-      </div>
-      
-      <div class="blob">      
+      {/* big pink blob */}
+      <div class="blob2">
       <SvgBlobs2></SvgBlobs2>
-      
       </div>
-      
 
 
-</div>
+
+        <div class="container">
+          <div class="centered">
+
+            <h1>
+
+                <div className = "treatment">
+                  <div className = "images">  
+                    <img 
+                          src={eachTreatment.image} 
+                          alt={eachTreatment.name} 
+                          mode='fit' 
+                          />
+                  </div>
+
+                    {eachTreatment.title}<br></br>
+                    ${eachTreatment.price}.00<br></br>
+                    {eachTreatment.duration} mins<br></br>
+                    {eachTreatment.description}<br></br>
+                    <br></br>
+                    <br></br> <br></br> <br></br>
+                </div>
+
+            </h1>
+
+          </div>
+        </div>
+
+            <div class="blob">
+            <SvgBlobs1></SvgBlobs1>
+            <h1><Link to={`/appointment`}>book an appointment</Link></h1>
+            </div>
+            
+            <div class="blob">      
+            <SvgBlobs2></SvgBlobs2>
+            </div>
+
+    </div>
+
+
     )
 }
 
