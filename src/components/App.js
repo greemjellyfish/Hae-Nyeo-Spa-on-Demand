@@ -3,7 +3,7 @@ import React, { useEffect } from 'react'; //useEffect hooks //********* updating
 import { useSelector, useDispatch } from 'react-redux' //********* reading hooks step 1
 //useDispatch ********* updating hooks step 3
 
-import { BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
+import { HashRouter as Router, Switch, Route, Link} from "react-router-dom";
 //routing yes
 
 import AppointmentForm from './appointment/AppointmentForm.js'

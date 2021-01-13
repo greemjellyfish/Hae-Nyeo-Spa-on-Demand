@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
+import { HashRouter as Router, Switch, Route, Link} from "react-router-dom";
 import SvgBlobs1 from './svgBlobs/1.js'
 import SvgBlobs3 from './svgBlobs/3.js'
 import SvgBlobs4 from './svgBlobs/4.js'

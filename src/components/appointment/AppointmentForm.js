@@ -4,7 +4,7 @@ import { render } from 'react-dom'
 //import PaymentForm from './PaymentForm.js'
 //import TimeForm from './TimeForm.js'
 import { Form } from 'semantic-ui-react'
-import { BrowserRouter as Router, Switch, Route, Link, withRouter } from "react-router-dom"
+import { HashRouter as Router, Switch, Route, Link, withRouter } from "react-router-dom"
 
 import SvgBlobs1 from '../svgBlobs/1.js'
 import SvgBlobs3 from '../svgBlobs/3.js'
