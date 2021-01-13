@@ -1,45 +1,3 @@
-// import React from 'react'
-// // import { render } from 'react-dom'
-// import LocationForm from './LocationForm.js'
-// import PaymentForm from './PaymentForm.js'
-// import TimeForm from './TimeForm.js'
-
-// import { useSelector } from 'react-redux' //reading state react-redux HOOKS step1
-
-// const AppointmentForm = () => {
-// //console.log(props.appointment)
-
-//     const appointment = useSelector(state => state.appointment.appointment)  //reading state react-redux hHOOKS step2
-//     //write a selector function to return whatever piece of state is important to your component
-//     //console.log("appointmentForm HOOKS appointment", appointment )
-
-//     return (
-//             <div>
-//               {/* reading state react-redux HOOKS step3*/}
-//               <h5> appointment from api </h5>
-//               {appointment.address}
-//               {appointment.time}
-//               {appointment.payment}     
-
-//             {appointment.map((eachAppointment, index) => 
-//             <LocationForm key={index} eachAppointment={eachAppointment} />
-//             )}
-//             <TimeForm />
-//             <PaymentForm />
-//             </div>
-//     )
-// }
-
-// export default AppointmentForm
-
-
-
-
-
-
-
-
-
 import React from 'react'
 import { render } from 'react-dom'
 //import LocationForm from './LocationForm.js'
@@ -384,3 +342,41 @@ fetch("https://haenyeospa.herokuapp.com/api/v1/users/1/appointments",{
 }
 
 export default withRouter(AppointmentForm)
+
+
+
+
+// Redux code
+// import React from 'react'
+// // import { render } from 'react-dom'
+// import LocationForm from './LocationForm.js'
+// import PaymentForm from './PaymentForm.js'
+// import TimeForm from './TimeForm.js'
+
+// import { useSelector } from 'react-redux' //reading state react-redux HOOKS step1
+
+// const AppointmentForm = () => {
+// //console.log(props.appointment)
+
+//     const appointment = useSelector(state => state.appointment.appointment)  //reading state react-redux hHOOKS step2
+//     //write a selector function to return whatever piece of state is important to your component
+//     //console.log("appointmentForm HOOKS appointment", appointment )
+
+//     return (
+//             <div>
+//               {/* reading state react-redux HOOKS step3*/}
+//               <h5> appointment from api </h5>
+//               {appointment.address}
+//               {appointment.time}
+//               {appointment.payment}     
+
+//             {appointment.map((eachAppointment, index) => 
+//             <LocationForm key={index} eachAppointment={eachAppointment} />
+//             )}
+//             <TimeForm />
+//             <PaymentForm />
+//             </div>
+//     )
+// }
+
+// export default AppointmentForm
