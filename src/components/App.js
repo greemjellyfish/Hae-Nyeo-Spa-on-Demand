@@ -64,7 +64,7 @@ const App = () => {
       <div className = "App">
       <Switch>
         <Route exact path="/treatments" component={TreatmentPage} />  
-        <Route exact path="/treatments/#/:id" component={Treatment} />
+        <Route exact path="/treatments/:id" component={Treatment} />
         <Route exact path="/appointment" component={AppointmentForm} />
         <Route exact path="/appointments" component={AppointmentPage} />
         <Route exact path="/bookingConfirm" component={BookingConfirmPage}/>
