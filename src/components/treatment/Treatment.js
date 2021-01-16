@@ -8,7 +8,9 @@ import SvgBlobs5 from '../svgBlobs/5.js'
 import SvgBlobs2 from '../svgBlobs/2.js'
 
 const Treatment = (props) => {
+    
     const [eachTreatment, setEachTreatment] = React.useState({})
+    
     const treatments = useSelector(state => state.treatment.treatments)
 
     console.log(treatments)
@@ -18,9 +20,10 @@ const Treatment = (props) => {
       if (treatments.length){ //if treatments is not an empty array(default state), then get the path, and get the id. 
         console.log(treatments)
         // //debugger
-        const id = parseInt(window.location.pathname.split('/')[2])
+        const id = window.location.href.split('/')[5]
+        console.log(window.location.href.split('/')[5])
         console.log(id)
-        const eachTreatmentID = treatments.find(eachTreat => eachTreat.id === id)
+        const eachTreatmentID = treatments.find(eachTreat => eachTreat.id === parseInt(id))
         console.log(eachTreatmentID)
         setEachTreatment(eachTreatmentID)
       }
