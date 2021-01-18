@@ -11,7 +11,7 @@ const TreatmentCard = ({ treatment }) => {
     //console.log(treatment)
 
     return (
-        <div>
+        <div> 
 
             <div class="blob-wrapper">
         

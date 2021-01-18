@@ -5,6 +5,8 @@ import SvgBlobs1 from '../svgBlobs/1.js'
 import SvgBlobs3 from '../svgBlobs/3.js'
 import SvgBlobs4 from '../svgBlobs/4.js'
 import SvgBlobs2 from '../svgBlobs/2.js'
+import Menu from '../Menu.js'
+
 
 const Treatment = (props) => {
     
@@ -32,33 +34,7 @@ const Treatment = (props) => {
   return (
 
     <div>
-      <div class="blob-wrapper">
-        <div class="blob">
-        <SvgBlobs1></SvgBlobs1>
-        <h1><Link to="/treatments">TREATMENT</Link></h1>
-        </div>
-        
-        <div class="blob">      
-        <SvgBlobs2></SvgBlobs2>
-        <h1><Link to="/appointment">APPOINTMENT</Link></h1>
-        </div>
-        
-        <div class="blob">
-        <SvgBlobs3></SvgBlobs3>
-        </div>
-        
-        <div class="blob">
-        <SvgBlobs4></SvgBlobs4>
-        <h1><Link to="/">H O M E</Link></h1>
-        </div>
-      </div>
-
-      {/* big pink blob */}
-      <div class="blob2">
-      <SvgBlobs2></SvgBlobs2>
-      </div>
-
-
+      <Menu></Menu>
 
         <div class="container">
           <div class="centered">

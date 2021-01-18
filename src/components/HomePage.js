@@ -5,7 +5,6 @@ import Menu from './Menu.js'
 const HomePage = () => {
 
         return (
- 
           <Menu></Menu>
         )
 }
