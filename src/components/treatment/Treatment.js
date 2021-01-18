@@ -4,7 +4,6 @@ import { HashRouter as Router, Switch, Route, Link} from "react-router-dom";
 import SvgBlobs1 from '../svgBlobs/1.js'
 import SvgBlobs3 from '../svgBlobs/3.js'
 import SvgBlobs4 from '../svgBlobs/4.js'
-import SvgBlobs5 from '../svgBlobs/5.js'
 import SvgBlobs2 from '../svgBlobs/2.js'
 
 const Treatment = (props) => {
