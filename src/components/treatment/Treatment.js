@@ -41,7 +41,7 @@ const Treatment = (props) => {
 
             <h1>
 
-                <div className = "treatment">
+                <div className = "treatment" data-testid = "treatment">
                   <div className = "images">  
                     <img 
                           src={eachTreatment.image} 

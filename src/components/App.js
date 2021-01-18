@@ -14,8 +14,6 @@ import Treatment from './treatment/Treatment'
 import HomePage from './HomePage'
 
 
-import '../styles/style.scss'
-
 import { getTreatments, getAppointment, addAppointment} from '../api'
 
 
