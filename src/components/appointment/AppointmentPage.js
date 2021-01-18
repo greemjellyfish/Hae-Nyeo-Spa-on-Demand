@@ -3,7 +3,7 @@ import { useSelector } from 'react-redux'  //hooks
 import AppointmentCard from './AppointmentCard'
 import { HashRouter as Router, Switch, Route, Link} from "react-router-dom"
 import { getAppointment, addAppointment } from '../../api'
-
+import Menu from '../Menu.js'
 
 class AppointmentPage extends React.Component {
 
@@ -61,6 +61,8 @@ class AppointmentPage extends React.Component {
 
         return(
             <div>
+              <Menu></Menu>
+
               <div class="container">
               <div class="centered">
                     {appointments.map((appointment, index) => 
@@ -68,7 +70,6 @@ class AppointmentPage extends React.Component {
                       )
                       }
                     <br></br>
-                    <Link to={`/`}> home </Link>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               </div>
               </div>
             </div>
