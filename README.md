@@ -52,3 +52,25 @@ Hae Nyeo Spa (at home/on-demand) is a full-stack web application where users can
 * [ActiveModel::Serializer](https://github.com/rails-api/active_model_serializers)
 * Semantc UI
 * SVG CSS: Morphing Blog by Monica Dinculescu and blogs, grids and vws by Juan Pablo
+
+# Dataflow
+
+```
+                                      index
+                                        |
+                                       App
+                                        |
+   _____________________________________|___________________________________
+  |             |               |             |               |             |
+  |             |               |             |               |             |
+  |             |               |             |               |             |
+  |             |               |             |               |             |
+TreatmentPage  Treatment  ApointmentForm AppointmentPage  BookingConfirm  Home
+  |                                           |
+  |                                           |
+TreatmentList                           AppointmentCard
+  |
+  |
+TreatmentCard
+                            
+```
