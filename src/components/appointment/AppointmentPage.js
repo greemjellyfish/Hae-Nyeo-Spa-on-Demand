@@ -62,13 +62,12 @@ class AppointmentPage extends React.Component {
         return(
             <div>
               <Menu></Menu>
-
               <div class="container">
-              <div class="centered">
-                    {appointments.map((appointment, index) => 
+                <div class="centered">
+                  {appointments.map((appointment, index) => 
                       <AppointmentCard key = {index} appointment={appointment} deleteAppointment={this.deleteAppointment} />
                       )
-                      }
+                  }
                     <br></br>
               </div>
               </div>

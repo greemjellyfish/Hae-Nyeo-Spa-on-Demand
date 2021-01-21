@@ -45,9 +45,14 @@
     ]
   },
   "devDependencies": {
+    "@babel/preset-env": "^7.12.11",
+    "@babel/preset-react": "^7.12.10",
     "@svgr/cli": "^5.5.0",
     "@testing-library/react": "^9.5.0",
+    "babel-jest": "^26.6.3",
+    "jest": "^26.6.3",
     "jest-dom": "^4.0.0",
-    "react-test-render": "^1.1.2"
+    "react-test-render": "^1.1.2",
+    "react-test-renderer": "^17.0.1"
   }
 }

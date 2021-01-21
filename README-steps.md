@@ -115,6 +115,9 @@ https://www.youtube.com/watch?v=3e1GHCA3GP0
 
 save it as a dev dependancy(--save-dev) because dev is not part of the functionality(project) so it goes in as a dependancy
 
+https://jestjs.io/docs/en/tutorial-react
+
+`yarn add --dev jest babel-jest @babel/preset-env @babel/preset-react react-test-renderer`
 
 
 # svg 
