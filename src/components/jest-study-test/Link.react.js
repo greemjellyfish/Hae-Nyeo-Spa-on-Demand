@@ -33,7 +33,7 @@ export default class Link extends React.Component {
         href={this.props.page || '#'}
         onMouseEnter={this._onMouseEnter}
         onMouseLeave={this._onMouseLeave}
-      >
+      > 
         {this.props.children}
       </a>
     );

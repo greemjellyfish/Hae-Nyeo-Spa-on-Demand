@@ -119,6 +119,11 @@ https://jestjs.io/docs/en/tutorial-react
 
 `yarn add --dev jest babel-jest @babel/preset-env @babel/preset-react react-test-renderer`
 
+errors occured so deleted lock and a few that i didn't see in jest tutorial page and npm installed 
+
+watching the youtube vid again and
+
+`npm install -D jest-dom`
 
 # svg 
 
