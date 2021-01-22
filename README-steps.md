@@ -125,6 +125,17 @@ watching the youtube vid again and
 
 `npm install -D jest-dom`
 
+Step 1: Uninstall jest-dom(deprecated one)
+npm uninstall jest-dom
+
+Step 2:Install testing-library/jest-dom
+npm i @testing-library/jest-dom
+
+Step 3:Replace
+import "jest-dom/jest-dom/extend-expect";
+with
+import "@testing-library/jest-dom/extend-expect";
+
 # svg 
 
 -created `svgBlobs` folder and files.
