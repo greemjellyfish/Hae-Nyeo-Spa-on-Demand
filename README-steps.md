@@ -117,7 +117,7 @@ save it as a dev dependancy(--save-dev) because dev is not part of the functiona
 
 https://jestjs.io/docs/en/tutorial-react
 
-`yarn add --dev jest babel-jest @babel/preset-env @babel/preset-react react-test-renderer`
+`npm add --dev jest babel-jest @babel/preset-env @babel/preset-react react-test-renderer`
 
 errors occured so deleted lock and a few that i didn't see in jest tutorial page and npm installed 
 
