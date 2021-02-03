@@ -12,7 +12,7 @@ import AppointmentPage from './appointment/AppointmentPage'
 import TreatmentPage from './treatment/TreatmentPage'
 import Treatment from './treatment/Treatment'
 import HomePage from './HomePage'
-import Test from './jest-study-test/Test'
+import TestAppComponent from './jest-study-test/TestAppComponent'
 
 
 import { getTreatments, getAppointment, addAppointment} from '../api'
@@ -62,7 +62,7 @@ const App = () => {
     <Router>
       <div className = "App">
       <Switch>
-        <Route exact path="/test" component={Test} />  
+        <Route exact path="/test" component={TestAppComponent} />  
         <Route exact path="/treatments" component={TreatmentPage} />  
         <Route exact path="/treatments/:id" component={Treatment} />
         <Route exact path="/appointment" component={AppointmentForm} />

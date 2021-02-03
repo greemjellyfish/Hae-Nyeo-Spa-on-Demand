@@ -1,9 +1,10 @@
+//test.js acts like app.js in youtube tutorial
 import React from 'react'
 import { HashRouter as Router, Switch, Route, Link} from "react-router-dom";
 import Menu from '../Menu.js'
 import Button from './Button'
 
-const Test = () => {
+const TestAppComponent = () => {
 
         return (
             <div>
@@ -14,4 +15,4 @@ const Test = () => {
             </div>
         )
 }
-export default Test
+export default TestAppComponent
