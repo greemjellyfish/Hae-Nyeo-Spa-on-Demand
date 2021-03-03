@@ -11,7 +11,7 @@
     "history": "^5.0.0",
     "leaflet": "^1.6.0",
     "node-sass": "^4.14.1",
-    "pug": "^3.0.0",
+    "pug": "^3.0.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-leaflet": "^2.7.0",
