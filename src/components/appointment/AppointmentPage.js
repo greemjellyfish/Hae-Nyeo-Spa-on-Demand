@@ -1,8 +1,5 @@
 import React from 'react'
-// import { useSelector } from 'react-redux'  //hooks
 import AppointmentCard from './AppointmentCard'
-// import { HashRouter as Router, Switch, Route, Link} from "react-router-dom"
-// import { getAppointment, addAppointment } from '../../api'
 import Menu from '../Menu.js'
 
 class AppointmentPage extends React.Component {
@@ -20,9 +17,6 @@ class AppointmentPage extends React.Component {
                 )
     }
 
-
-
-
     //*****************************************
     //*************** DELETE *************** /
     //*****************************************
@@ -35,6 +29,7 @@ class AppointmentPage extends React.Component {
             return false
           }
         })
+
         this.setState({
           appointments: updatedAppointments
         })
